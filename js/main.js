@@ -215,22 +215,19 @@ function setEggToInitialPosition (egg) {
 }
 
 // Show Broken Egg Function
-function showBrokenEgg (egg)
-{
-  brokenEggNumber = $(egg).attr('data-brokenEgg');
+function showBrokenEgg(egg) {
+  brokenEggNumber = $(egg).attr("data-brokenEgg");
   var brokenEggId = "brokenEgg" + brokenEggNumber;
-  document.getElementById(brokenEggId).style.display = 'block';
+  document.getElementById(brokenEggId).style.display = "block";
   hideBrokenEgg(brokenEggId);
 }
 
 // Hide Broken Egg Function
-function hideBrokenEgg (brokenEggId)
-{
-  setTimeout(() => {
-    
-  document.getElementById(brokenEggId).style.display = 'none';
-
-  }, 2000);
+function hideBrokenEgg(brokenEggId) {
+  setTimeout( function () 
+  {
+    brokenEggId.style.display = "none";
+  }, 1000);
 }
 
 // Decrement Life Function
@@ -250,5 +247,5 @@ function updateScore()
   } 
   document.getElementById('score').innerHTML = score;
   document.getElementById('currentScore').innerHTML = currentScore;
-  document.getElementById("gameOverScore").innerHTML = currentScore;
+  document.getElementById('gameOverScore').innerHTML = currentScore;
 }
