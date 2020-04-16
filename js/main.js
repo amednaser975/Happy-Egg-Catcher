@@ -250,4 +250,5 @@ function updateScore()
   } 
   document.getElementById('score').innerHTML = score;
   document.getElementById('currentScore').innerHTML = currentScore;
+  document.getElementById("gameOverScore").innerHTML = currentScore;
 }
