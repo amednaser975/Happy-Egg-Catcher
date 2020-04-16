@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Happy Egg Catcher Game using javascript"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Happy Egg Catcher</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,900">
+    </head>
+    <body>
+         
+        <!-- Start Popups-->
+        <div id="popups" class="d-flex justify-content-center align-items-center">
+            <div id="gameStart">
+                <h1>Happy Eggs</h1>
+                <button type="button" id="playBtn">Play</button>
+            </div>
+            <div id="gameOver" class="d-none">
+                <h1>Happy Eggs</h1>
+                <h2 id="gameOverScore">0</h2>
+                <button type="button" id="playAgainBtn">Play Again</button>
+            </div>
+        </div>
+        <!-- End Popups -->
+
+        <!-- Start Game -->
+        <div id="container" class="container-fluid ">
+            <!-- Start Game Header -->
+            <div id ="gameHeader" class="d-flex justify-content-between">
+                <div>
+                    Score <Span id="score">0</Span>
+                </div>
+                <div>
+                    Life <Span id="life">10</Span>
+                </div>
+            </div>
+            <!-- End Game Header -->
+           
+
+            <!-- Start Main Content -->
+            <div id="mainContent" class="row">
+                <div class="col-md-8 m-auto p-0 h-100">
+                    <div id="chicks" class="d-flex justify-content-between">
+                        <div id="chick1" class="chick">
+                            <img src="images/Happy_hen.svg" alt="Hen"/>
+                        </div>
+                        <div id="chick2" class="chick">
+                            <img src="images/Happy_hen.svg" alt="Hen"/>
+                        </div>
+                        <div id="chick3" class="chick">
+                            <img src="images/Happy_hen.svg" alt="Hen"/>
+                        </div>
+                    </div>
+                    <div id="eggs" class="d-flex justify-content-between">
+                        <div id="egg1" class="egg" data-brokenEgg="1">
+                            <img src="images/Happy_Egg.svg" alt="Egg"/>
+                        </div>
+                        <div id="egg2" class="egg" data-brokenEgg="2">
+                            <img src="images/Happy_Egg.svg" alt="Egg"/>
+                        </div>
+                        <div id="egg3" class="egg" data-brokenEgg="3">
+                            <img src="images/Happy_Egg.svg" alt="Egg"/>
+                        </div>
+                    </div>
+                    <div id="brokenEgg1" class="brokenEgg">
+                        <img src="images/Broken_Egg.svg" alt="Broken Egg"/>
+                    </div>
+                    <div id="brokenEgg2" class="brokenEgg">
+                        <img src="images/Broken_Egg.svg" alt="Broken Egg"/>
+                    </div>
+                    <div id="brokenEgg3" class="brokenEgg">
+                        <img src="images/Broken_Egg.svg" alt="Broken Egg"/>
+                    </div>
+                </div>
+            </div>
+            <!-- End Main Content -->
+            </div>
+            
+            <!-- Start Basket-->
+            <div id="basket">
+                <span id="currentScore">0</span>
+            </div>
+            <!-- End Basket -->
+
+            <!-- Start Game Footer -->
+            <div id="floor"></div>
+            <!-- Start Game Footer -->
+        </div>
+        <!-- End Game -->
+        <script src="js/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
