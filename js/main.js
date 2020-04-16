@@ -230,7 +230,7 @@ function hideBrokenEgg (brokenEggId)
     
   document.getElementById(brokenEggId).style.display = 'none';
 
-  }, 1000);
+  }, 2000);
 }
 
 // Decrement Life Function
